@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "spa-talita-cakes:build:production"
+              "buildTarget": "spa-talita-cakes:build:production"
             },
             "development": {
-              "browserTarget": "spa-talita-cakes:build:development"
+              "buildTarget": "spa-talita-cakes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spa-talita-cakes:build"
+            "buildTarget": "spa-talita-cakes:build"
           }
         },
         "test": {
