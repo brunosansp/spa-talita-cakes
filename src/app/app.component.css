@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Stars & Love';
+    src: url('../assets/fonts/Stars&Love.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jozoor';
+    src: url('../assets/fonts/Jozoor.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan Regular';
+    src: url('../assets/fonts/LeagueSpartanRegular.ttf') format('truetype');
+}

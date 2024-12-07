@@ -2,6 +2,10 @@ header {
     background-color: #f8f8f8;
     padding: 20%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav ul {
@@ -18,4 +22,37 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #333;
+    font-family: 'League Spartan Regular';
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: auto; */
+}
+
+.titulo span:first-child {
+    font-family: 'Stars & Love', cursive;
+    font-size: 78px;
+    color: #d76a7e;
+}
+
+.titulo span:last-child {
+    font-family: "Jozoor", sans-serif;
+    font-size: 34px;
+    margin-top: -50px;
+    color: #d76a7e;
+}
+
+@media (max-width: 768px) {
+    .titulo span:first-child {
+        font-size: 48px;
+    }
+    .titulo span:last-child {
+        font-size: 24px;
+    }
+}
+
+nav { /* Adicionado para centralizar o menu */
+    text-align: center;
 }
