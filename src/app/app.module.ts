@@ -9,6 +9,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRountingModule } from './app-rounting.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRountingModule } from './app-rounting.module';
   ],
   imports: [
     BrowserModule,
-    AppRountingModule
+    AppRountingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
