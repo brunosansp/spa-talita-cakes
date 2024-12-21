@@ -1,0 +1,30 @@
+mat-grid-tile {
+  box-shadow: 1px 1px 5px;
+  display: flex;
+}
+
+mat-grid-tile::before {
+  content: "";
+  display: block;
+  padding-top: 10%;
+  background-color: white;
+}
+
+mat-grid-tile > img {
+  /* Seletor para a imagem dentro do tile */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+mat-grid-tile-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #d76a7e; /* Cor de fundo da logo */
+  color: #ffffff; /* Cor das letras */
+}

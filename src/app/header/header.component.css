@@ -8,7 +8,7 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   height: 100px;
   overflow: hidden;
@@ -22,7 +22,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 45px;
 }
 
 nav a {
@@ -33,12 +33,12 @@ nav a {
 
 .titulo {
   display: flex;
-  flex-direction: column;
-  /* margin-right: auto; */
+  /* flex-direction: row; */
+  margin-right: auto;
 }
 
 .titulo img {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
