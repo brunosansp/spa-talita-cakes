@@ -10,6 +10,9 @@ import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRountingModule } from './app-rounting.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SobreComponent,
     ProdutosComponent,
     ContatoComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRountingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatGridListModule,
+    MatIconModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

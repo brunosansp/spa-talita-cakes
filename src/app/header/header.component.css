@@ -1,63 +1,70 @@
+:host {
+  display: block;
+}
+
 header {
-    background-color: #f8f8f8;
-    padding: 20%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #f8f8f8;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  overflow: hidden;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 45px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'League Spartan Regular';
+  text-decoration: none;
+  color: #333;
+  font-family: "League Spartan Regular";
 }
 
 .titulo {
-    display: flex;
-    flex-direction: column;
-    /* margin-right: auto; */
+  display: flex;
+  /* flex-direction: row; */
+  margin-right: auto;
 }
 
 .titulo img {
-    width: 200px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 .titulo span:first-child {
-    font-family: 'Stars & Love', cursive;
-    font-size: 78px;
-    color: #d76a7e;
+  font-family: "Stars & Love", cursive;
+  font-size: 60;
+  color: #d76a7e;
 }
 
 .titulo span:last-child {
-    font-family: "Jozoor", sans-serif;
-    font-size: 34px;
-    margin-top: -50px;
-    color: #d76a7e;
+  font-family: "Jozoor", sans-serif;
+  font-size: 28px;
+  margin-top: -30px;
+  color: #d76a7e;
 }
 
 @media (max-width: 768px) {
-    .titulo span:first-child {
-        font-size: 48px;
-    }
-    .titulo span:last-child {
-        font-size: 24px;
-    }
+  .titulo span:first-child {
+    font-size: 48px;
+  }
+  .titulo span:last-child {
+    font-size: 24px;
+  }
 }
 
-nav { /* Adicionado para centralizar o menu */
-    text-align: center;
+nav {
+  /* Adicionado para centralizar o menu */
+  text-align: center;
 }
