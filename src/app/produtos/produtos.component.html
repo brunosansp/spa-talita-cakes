@@ -1,1 +1,13 @@
-<p>produtos works!</p>
+<mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let produto of produtos">
+        <img src="{{ produto.image }}" alt="{{ produto.name }}">
+        <mat-grid-tile-footer>
+            <h3>{{ produto.name }}</h3>
+            <p>{{ produto.description }}</p>
+            <p>{{ produto.price | currency }}</p>
+            <button>
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+        </mat-grid-tile-footer>
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,25 +1,33 @@
+:host {
+  display: block;
+}
+
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .links a:hover {
-    background-color: #555;
+  background-color: #555;
 }
