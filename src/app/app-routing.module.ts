@@ -10,15 +10,12 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'produtos', component: ProdutosComponent },
-  { path: 'contato', component: ContatoComponent }
-]
+  { path: 'contato', component: ContatoComponent },
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRountingModule { }
+export class AppRoutingModule {}

@@ -1,1 +1,49 @@
-<p>contato works!</p>
+<div class="contato-container">
+    <h2>Entre em Contato</h2>
+    <form (ngSubmit)="onSubmit()" #contatoForm="ngForm">
+        <!-- Nome -->
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" [(ngModel)]="formData.nome" required
+                #nome="ngModel" />
+            <div *ngIf="nome.invalid && nome.touched" class="error">
+                O nome é obrigatório.
+            </div>
+        </div>
+
+        <!-- E-mail -->
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" [(ngModel)]="formData.email" required email
+                #email="ngModel" />
+            <div *ngIf="email.invalid && email.touched" class="error">
+                Insira um e-mail válido.
+            </div>
+        </div>
+
+        <!-- Telefone -->
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" class="form-control" [(ngModel)]="formData.telefone"
+                required #telefone="ngModel" />
+            <div *ngIf="telefone.invalid && telefone.touched" class="error">
+                O telefone é obrigatório.
+            </div>
+        </div>
+
+        <!-- Mensagem -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" [(ngModel)]="formData.mensagem" required
+                #mensagem="ngModel"></textarea>
+            <div *ngIf="mensagem.invalid && mensagem.touched" class="error">
+                A mensagem é obrigatória.
+            </div>
+        </div>
+
+        <!-- Botão de Enviar -->
+        <button type="submit" class="btn" [disabled]="contatoForm.invalid">
+            Enviar
+        </button>
+    </form>
+</div>

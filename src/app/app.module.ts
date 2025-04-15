@@ -8,11 +8,12 @@ import { SobreComponent } from './sobre/sobre.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
-import { AppRountingModule } from './app-rounting.module';
+import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,11 @@ import { MatIconModule } from '@angular/material/icon';
   ],
   imports: [
     BrowserModule,
-    AppRountingModule,
+    AppRoutingModule,
     FontAwesomeModule,
     MatGridListModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
